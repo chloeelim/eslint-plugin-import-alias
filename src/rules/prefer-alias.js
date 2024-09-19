@@ -95,7 +95,7 @@ export default {
         if (
           !(importWithoutAlias |> isParentImport) &&
           hasAlias &&
-          !options.allowSubpathWithAlias
+          !options.aliasForSubpaths
         ) {
           return context.report({
             fix: fixer =>
